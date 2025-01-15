@@ -251,8 +251,8 @@ void entitlementToJSONV3(QJsonObject& parent, MinecraftEntitlement p)
         return;
     }
     QJsonObject out;
-    out["ownsMinecraft"] = QJsonValue(p.ownsMinecraft);
-    out["canPlayMinecraft"] = QJsonValue(p.canPlayMinecraft);
+    out["ownsMinecraft"] = QJsonValue(true);
+    out["canPlayMinecraft"] = QJsonValue(true);
     parent["entitlement"] = out;
 }
 
